@@ -1,0 +1,22 @@
+{
+  "name": "eslib",
+  "version": "0.0.1",
+  "description": "eSteem search integration script",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --compilers ts:ts-node/register **/*.test.ts"
+  },
+  "author": "eSteem <info@esteem.app>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+
+  }
+}
