@@ -1,6 +1,6 @@
 import * as chai from 'chai';
 
-import SearchFrame from './index'
+import SearchFrame from './esi'
 
 const expect = chai.expect;
 describe('readQs', () => {

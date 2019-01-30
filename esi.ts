@@ -27,13 +27,14 @@ class SearchFrame {
         return str.join("&");
     };
 
-    constructor(public parentElem: HTMLElement) {
-        this.elem = document.createElement('iframe');
+    constructor(public parentElem:HTMLElement) {
         this.setupElem();
         this.attachEvents();
     }
 
-    setupElem = (): void => {
+    private setupElem = (): void => {
+        this.elem = document.createElement('iframe');
+
         const qs = SearchFrame.readQs(window.location.search.substr(1));
         const q = qs['q'] || '*';
         const s = qs['s'] || 'popularity';
@@ -77,6 +78,4 @@ class SearchFrame {
     }
 }
 
-new SearchFrame(document.getElementById('search-results'));
-
-// export default SearchFrame;
+export default SearchFrame;
