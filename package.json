@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha --reporter spec --compilers ts:ts-node/register **/*.test.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:esteemapp/esi.git"
+  },
   "author": "eSteem <info@esteem.app> (http://github.com/esteemapp/)",
   "license": "MIT",
   "devDependencies": {
